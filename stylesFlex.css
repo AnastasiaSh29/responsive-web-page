@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600&display=swap');
+
+.body {
+    margin: 0;
+    color: #000;
+    font-family: 'Cairo','Helvetica Neue', 'Arial', 'sans-serif';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #e76f51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 10%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.header:before, .header:after {
+    content: "(FLEX)";
+}
+.header:before {
+    margin-right: 30px;
+}
+.header:after {
+    margin-left: 30px;
+}
+
+.wrap {
+    flex: 8 0 80%;
+    display: flex;
+}
+
+.nav {
+    background-color: #f4a261;
+    font-size: 15px;
+    flex: 1 0 10%;
+    padding: 10px 0 0 20px;
+}
+
+.main{
+    margin: 0 20px;
+    line-height: 20px;
+    flex: 8 0 0;
+    padding: 15px 0 0 0;
+}
+
+.links {
+    background-color: #2a9d8f;
+    font-size: 15px;
+    flex: 1 0 10%;
+    padding: 10px 0 0 20px;
+}
+
+.footer {
+    background-color: #264653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 10%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    .wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main{
+        flex: 8;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .links {
+        flex: 1;
+    }
+}
